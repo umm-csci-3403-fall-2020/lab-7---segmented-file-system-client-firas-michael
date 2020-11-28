@@ -15,7 +15,7 @@ public class DataPacket {
         this.bytes = pack.getData();
         this.constructPacketNumber();
         this.fileID = bytes[1];
-        this.status = bytes[2];
+        this.status = bytes[0];
         int length = pack.getLength(); // gets length
         this.skip = Arrays.copyOfRange(pack.getData(), 4, length); // skips first 4
         this.isAdded = false;
