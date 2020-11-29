@@ -22,10 +22,10 @@ public class HeaderPacket {
     }
 
     public byte getFileID() {
-        return fileID;
+        return this.fileID;
     }
 
     public byte[] getFileName() {
-        return filename;
+        return this.filename;
     }
 }
